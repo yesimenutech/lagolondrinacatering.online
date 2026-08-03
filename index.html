@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Golondrina Catering – Authentic Mexican Food & Catering</title>
+    <meta name="description" content="Authentic Mexican cuisine and professional catering services in Los Angeles. Order online tacos, burritos, enchiladas, and traditional dishes crafted with care.">
+    <link rel="canonical" href="https://lagolondrinacatering.onlineordering.io/en?locationId=1502662&orderMode=in_store_pickup">
+    <meta property="og:title" content="La Golondrina Catering – Authentic Mexican Food">
+    <meta property="og:description" content="Experience vibrant and authentic Mexican cuisine in Los Angeles. Quality ingredients, traditional recipes, and full catering services for your events.">
+    <meta property="og:image" content="https://res.cloudinary.com/dzklt0a5u/image/upload/v1785775737/IMG-20260720-WA0147_nn2n85.jpg">
+    <meta property="og:type" content="restaurant">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" id="favicon" type="image/png" href="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1785775711/LaGolondrinaLOGO_ubx0rw.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "La Golondrina Catering",
+      "image": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785775737/IMG-20260720-WA0147_nn2n85.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4820 Huntington Dr",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA",
+        "postalCode": "90032",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-626-260-8270",
+      "servesCuisine": "Mexican",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "11:00",
+          "closes": "23:00"
+        }
+      ]
+    }
+    </script>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-primary: #FF8C00;
+            --color-primary-hover: #E07B00;
+            --color-accent: #FFD700;
+            --color-black: #111111;
+            --color-dark: #1A1A1A;
+            --color-dark-card: #222222;
+            --color-white: #FFFFFF;
+            --color-text-light: #CCCCCC;
+            --font-title: 'Cinzel', serif;
+            --font-body: 'Montserrat', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--color-text-light);
+            background-color: var(--color-black);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: var(--color-primary);
+            color: var(--color-black);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 8px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .top-bar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(17, 17, 17, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 18px 0;
+            border-bottom: 2px solid var(--color-primary);
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-family: var(--font-title);
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-accent);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-link {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--color-white);
+            letter-spacing: 1.5px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--color-accent);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .navbar-toggler {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .toggler-icon {
+            width: 28px;
+            height: 3px;
+            background-color: var(--color-primary);
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_1200/v1785775737/IMG-20260720-WA0147_nn2n85.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            border-bottom: 3px solid var(--color-primary);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(17,17,17,0.85) 0%, rgba(0,0,0,0.65) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: var(--color-white);
+            padding: 60px 20px;
+            max-width: 950px;
+        }
+
+        .hero-logo-container {
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-logo {
+            max-height: 140px;
+            width: auto;
+            filter: drop-shadow(0 4px 15px rgba(255, 140, 0, 0.4));
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background-color: var(--color-primary);
+            color: var(--color-black);
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding: 6px 16px;
+            border-radius: 2px;
+            margin-bottom: 20px;
+        }
+
+        .hero-title {
+            font-family: var(--font-title);
+            font-size: 58px;
+            font-weight: 800;
+            color: var(--color-white);
+            margin-bottom: 25px;
+            line-height: 1.15;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .hero-title span {
+            color: var(--color-accent);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            align-items: center;
+        }
+
+        .btn-custom-order {
+            display: inline-block;
+            padding: 16px 36px;
+            font-family: var(--font-body);
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background-color: var(--color-primary);
+            color: var(--color-black);
+            border: 2px solid var(--color-primary);
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-custom-order:hover {
+            background-color: var(--color-accent);
+            border-color: var(--color-accent);
+            color: var(--color-black);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+        }
+
+        .hero-address {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--color-accent);
+            margin-top: 15px;
+            letter-spacing: 1px;
+        }
+
+        /* Section Titles & Decorative Elements */
+        .section-header {
+            margin-bottom: 50px;
+        }
+
+        .section-header.centered {
+            text-align: center;
+        }
+
+        .section-subtitle-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .section-subtitle-container.centered {
+            justify-content: center;
+        }
+
+        .line-small {
+            width: 40px;
+            height: 3px;
+            background-color: var(--color-primary);
+        }
+
+        .section-subtitle {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--color-accent);
+        }
+
+        .section-title {
+            font-family: var(--font-title);
+            font-size: 38px;
+            font-weight: 700;
+            color: var(--color-white);
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 100px 0;
+            background-color: var(--color-dark);
+            border-bottom: 1px solid #333333;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text p {
+            color: var(--color-text-light);
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .about-text p:first-of-type {
+            font-size: 18px;
+            color: var(--color-white);
+            font-weight: 500;
+        }
+
+        .about-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            position: relative;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 2px solid var(--color-primary);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .about-image:hover {
+            transform: scale(1.02);
+        }
+
+        .about-images img:nth-child(2) {
+            transform: translateY(30px);
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 100px 0;
+            background-color: var(--color-black);
+        }
+
+        #gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 50px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 6px;
+            border: 2px solid #333;
+            transition: all 0.4s ease;
+            aspect-ratio: 1 / 1;
+        }
+
+        .gallery-item:hover {
+            border-color: var(--color-primary);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 140, 0, 0.2);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.08);
+        }
+
+        /* Catering Section */
+        .catering-section {
+            position: relative;
+            padding: 120px 0;
+            background-image: url('https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_1200/v1785776560/IMG-20260720-WA0133_ubdxjn.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            border-top: 3px solid var(--color-primary);
+            border-bottom: 3px solid var(--color-primary);
+        }
+
+        .catering-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(17, 17, 17, 0.9);
+        }
+
+        .catering-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .catering-box {
+            background: var(--color-dark-card);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 70px;
+            text-align: center;
+            border: 2px solid var(--color-primary);
+            border-radius: 8px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+        }
+
+        .catering-text {
+            color: var(--color-text-light);
+            line-height: 1.9;
+            margin-bottom: 20px;
+            font-size: 17px;
+        }
+
+        .catering-phone-badge {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 28px;
+            background-color: var(--color-black);
+            border: 1px solid var(--color-accent);
+            color: var(--color-accent);
+            font-weight: 700;
+            font-size: 18px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+        }
+
+        /* Info Section */
+        .info-section {
+            padding: 100px 0;
+            background-color: var(--color-dark);
+        }
+
+        .info-box {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--color-dark-card);
+            padding: 60px;
+            border: 1px solid #333333;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .info-item {
+            padding: 30px 20px;
+            background-color: var(--color-black);
+            border-bottom: 3px solid var(--color-primary);
+            border-radius: 6px;
+        }
+
+        .info-item h4 {
+            font-family: var(--font-title);
+            font-size: 20px;
+            color: var(--color-accent);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-item p {
+            color: var(--color-white);
+            font-size: 15px;
+            line-height: 1.7;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: var(--color-black);
+            padding: 80px 0 30px;
+            color: #9a9a9a;
+            border-top: 2px solid #222222;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+
+        .footer-title {
+            font-family: var(--font-title);
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--color-white);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-left: 3px solid var(--color-primary);
+            padding-left: 12px;
+        }
+
+        .footer-col p {
+            font-size: 15px;
+            line-height: 1.9;
+            color: #CCCCCC;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888888;
+            border-top: 1px solid #222222;
+            padding-top: 30px;
+        }
+
+        .footer-bottom a {
+            color: var(--color-primary);
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--color-accent);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 44px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .about-images {
+                order: -1;
+            }
+
+            .about-images img:nth-child(2) {
+                transform: translateY(0);
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-toggler {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background-color: var(--color-dark);
+                padding: 30px;
+                gap: 20px;
+                border-bottom: 2px solid var(--color-primary);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+            }
+
+            .nav-menu.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .hero-title {
+                font-size: 34px;
+            }
+
+            .catering-box {
+                padding: 40px 24px;
+            }
+
+            .info-box {
+                padding: 35px 20px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 28px;
+            }
+
+            .section-title {
+                font-size: 26px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn-custom-order {
+                width: 100%;
+                text-align: center;
+            }
+
+            .about-images {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                height: 280px;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-content {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--color-black);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-primary);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-primary-hover);
+        }
+    </style>
+    <script>
+        window.MENU_TECH_STATE = {
+            "cuid":"000000",
+            "info":{
+                "hours":"Monday - Sunday: 11AM A 11PM",
+                "phone":"626-260-8270",
+                "address":"4820 Huntington Dr, Los Angeles, CA 90032"
+            },
+            "lang":"en",
+            "ruid":"00000",
+            "title":"La Golondrina Catering",
+            "titles":{
+                "info-title":"Information",
+                "about-title":"We are La Golondrina Catering",
+                "promo1-title":"Best Friends Deal",
+                "promo2-title":"Buy 1 Get 1 FREE",
+                "promo3-title":"Awesome Foursome",
+                "gallery-title":"Delicious Mexican Food",
+                "info-subtitle":"Visit Us",
+                "about-subtitle":"About Us",
+                "catering-title":"La Golondrina Catering",
+                "delivery-title":"Food Delivery in NY",
+                "promo1-subtitle":"Sharing Is Caring",
+                "promo2-subtitle":"This Week Only",
+                "promo3-subtitle":"Sundays Only",
+                "gallery-subtitle":"Love At First Bite",
+                "catering-subtitle":"Party Time",
+                "delivery-subtitle":"Get Served Like a King"
+            },
+            "contact":{
+                "hours":"Monday - Sunday: 11AM A 11PM",
+                "phone":"626-260-8270",
+                "address":"4820 Huntington Dr, Los Angeles, CA 90032"
+            },
+            "gallery":[
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785776197/TORTA_ASADA_d8xdub.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785776197/TACOS_ASADA_orb9cb.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785776198/ENCHILADAS_GOLONDRINAS_j4tgee.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785776199/CARNE_ASADA_NACHOS_qaywbl.jpg",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1785776199/BURRITO_ASADA_1_nzyta9.jpg"
+            ],
+            "heroImg":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1785775737/IMG-20260720-WA0147_nn2n85.jpg",
+            "logoImg":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1785775711/LaGolondrinaLOGO_ubx0rw.png",
+            "promoBg":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1777151404/yiebnrm6l10wizbcdbp2.jpg",
+            "socials":[
+                {"url":"https://www.instagram.com/lagolondrinacatering/","platform":"instagram"},
+                {"url":"https://www.facebook.com/lagolondrinacateringla","platform":"facebook"},
+                {"platform":"tiktok","url":"https://www.tiktok.com/@la.golondrina.cat"}
+            ],
+            "showInfo":true,
+            "aboutImg1":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1785776138/IMG-20260720-WA0134_ioi615.jpg",
+            "aboutImg2":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1785776148/IMG-20260720-WA0133_ijgsrp.jpg",
+            "showAbout":true,
+            "showPromo":false,
+            "cateringBg":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1785776560/IMG-20260720-WA0133_ubdxjn.jpg",
+            "paragraphs":{
+                "about":"At La Golondrina Catering, we take pride in bringing our guests vibrant and authentic Mexican cuisine, crafted with care and rich culinary tradition. Every dish we serve is full of bold flavors and prepared to deliver a memorable dining experience. We are confident you will leave satisfied.\n\nThe secret to our success is simple: creating exceptional meals using fresh, high-quality ingredients that capture the true essence of Mexican cooking in every bite.\n\nOur mission is to help you savor the moments that truly matter. Enjoy great food. Sip on a refreshing drink. And above all, unwind and feel at home. We sincerely appreciate your continued support and trust",
+                "promo":"2 Medium Pizzas\n\nSoft Drinks\n\nGarlic Bread or Patato Wedges\n\nSalad to share\n\nHope you are hungry. Buy one regular priced pizza online and get a second pizza totally free!\n\nOnline only!\n\n6 Delicious regular size pizzas to choose from: Margherita, Capricciosa, Prosciutto e Funghi, Diavola, Calzone, Primavera.",
+                "catering":"Bring authentic flavors to your special events! Serving tacos, burritos, quesadillas, crispy taquitos, enchiladas, chile relleno, nachos, and more.\n\nContact us today for a quote: 626-260-8270",
+                "delivery":"Looking for food delivery nearby? Not everybody knows or has the time to prepare tasty food.\n\nWhen you want to get served like a king then food delivery from restaurant Pronto will be your best choice.\n\nSimply select \"Delivery\" at the checkout screen and we hope you'll appreciate our food delivery service."
+            },
+            "deliveryImg":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1777151404/yiebnrm6l10wizbcdbp2.jpg",
+            "heroAddress":"4820 Huntington Dr, Los Angeles, CA 90032",
+            "showGallery":true,
+            "showCatering":true,
+            "showDelivery":false,
+            "showReservations":false
+        };
+    </script>
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <span id="top-bar-phone">626-260-8270</span>
+            <span id="top-bar-address">4820 Huntington Dr, Los Angeles, CA 90032</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="navbar-brand" id="nav-brand">La Golondrina Catering</a>
+            <button class="navbar-toggler" id="navbar-toggler" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" data-es="Inicio" data-en="Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about-section" class="nav-link" data-es="Nosotros" data-en="About Us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery-section" class="nav-link" data-es="Menú & Galería" data-en="Menu & Gallery">Menu & Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#catering-section" class="nav-link" data-es="Eventos" data-en="Catering">Catering</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#info-section" class="nav-link" data-es="Contacto" data-en="Contact">Contact</a>
+                </li>
+                <li class="nav-item" style="display: flex; align-items: center; gap: 10px; margin-left: 10px; border-left: 1px solid #444; padding-left: 20px;">
+                    <span id="lang-es" style="cursor: pointer; font-weight: 400; color: #999; font-size: 13px;">ES</span>
+                    <span style="color: #666;">|</span>
+                    <span id="lang-en" style="cursor: pointer; font-weight: 700; color: var(--color-primary); font-size: 13px;">EN</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-logo-container">
+                <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1785775711/LaGolondrinaLOGO_ubx0rw.png" id="hero-logo" alt="La Golondrina Catering Logo" class="hero-logo" width="140" height="140">
+            </div>
+            <span class="hero-tag" data-es="Auténtica Cocina Mexicana" data-en="Authentic Mexican Cuisine">Authentic Mexican Cuisine</span>
+            <h1 class="hero-title" id="hero-main-title" data-es="Sabor Tradicional <span>& Eventos</span>" data-en="Traditional Flavor <span>& Catering</span>">Traditional Flavor <span>& Catering</span></h1>
+            <div class="hero-buttons">
+                <!-- 1. Script Motor Menutech -->
+                <script src="https://www.fbgcdn.com/embedder/js/ewm2.js"></script>
+
+                <!-- 2. Librería Menutech -->
+                <script src="https://menutech.xyz/menutechUI.min.js"></script>
+
+                <!-- Botón personalizado único para pedidos en línea -->
+                <a href="https://lagolondrinacatering.onlineordering.io/en?locationId=1502662&orderMode=in_store_pickup" target="_blank" rel="noopener noreferrer" class="btn-custom-order" id="hero-orders-btn" data-es="Pedir en Línea Ahora" data-en="Order Online Now">Order Online Now</a>
+
+                <div id="hero-reservations-wrapper" style="display: none;">
+                    <menutech-reservations id="hero-reservations" cuid="000000" ruid="00000" background="#FFD700" color="#111111" data-glf-cuid="000000" data-glf-ruid="00000" data-glf-reservation="true">
+                    </menutech-reservations>
+                </div>
+
+                <!-- 4. Forzar vinculación -->
+                <script>
+                setTimeout(() => { if(window.glfBindButtons) window.glfBindButtons(); }, 1000);
+                </script>
+            </div>
+            <p class="hero-address" id="hero-address">4820 Huntington Dr, Los Angeles, CA 90032</p>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="section-header">
+                        <span class="section-subtitle-container">
+                            <span class="line-small"></span>
+                            <span class="section-subtitle" id="about-subtitle" data-es="Sobre Nosotros" data-en="About Us">About Us</span>
+                        </span>
+                        <h2 class="section-title" id="about-title" data-es="Somos La Golondrina Catering" data-en="We are La Golondrina Catering">We are La Golondrina Catering</h2>
+                    </div>
+                    <p id="about-p1" data-es="En La Golondrina Catering, nos enorgullece ofrecer a nuestros invitados cocina mexicana vibrante y auténtica, elaborada con esmero y rica tradición culinaria. Cada platillo que servimos está lleno de sabores intensos y preparado para brindar una experiencia gastronómica memorable." data-en="At La Golondrina Catering, we take pride in bringing our guests vibrant and authentic Mexican cuisine, crafted with care and rich culinary tradition. Every dish we serve is full of bold flavors and prepared to deliver a memorable dining experience. We are confident you will leave satisfied.">At La Golondrina Catering, we take pride in bringing our guests vibrant and authentic Mexican cuisine, crafted with care and rich culinary tradition. Every dish we serve is full of bold flavors and prepared to deliver a memorable dining experience. We are confident you will leave satisfied.</p>
+                    <p id="about-p2" data-es="El secreto de nuestro éxito es sencillo: crear comidas excepcionales utilizando ingredientes frescos y de la más alta calidad que capturan la verdadera esencia de la cocina mexicana en cada bocado." data-en="The secret to our success is simple: creating exceptional meals using fresh, high-quality ingredients that capture the true essence of Mexican cooking in every bite.">The secret to our success is simple: creating exceptional meals using fresh, high-quality ingredients that capture the true essence of Mexican cooking in every bite.</p>
+                    <p id="about-p3" data-es="Nuestra misión es ayudarte a saborear los momentos que realmente importan. Disfruta de excelente comida, acompáñala con una bebida refrescante y, sobre todo, relájate y siéntete como en casa. Agradecemos sinceramente tu preferencia y confianza." data-en="Our mission is to help you savor the moments that truly matter. Enjoy great food. Sip on a refreshing drink. And above all, unwind and feel at home. We sincerely appreciate your continued support and trust">Our mission is to help you savor the moments that truly matter. Enjoy great food. Sip on a refreshing drink. And above all, unwind and feel at home. We sincerely appreciate your continued support and trust</p>
+                </div>
+                <div class="about-images">
+                    <img id="about-img-1" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1785776138/IMG-20260720-WA0134_ioi615.jpg" alt="Platillo tradicional mexicano La Golondrina" class="about-image" loading="lazy" width="400" height="380">
+                    <img id="about-img-2" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1785776148/IMG-20260720-WA0133_ijgsrp.jpg" alt="Especialidad mexicana de La Golondrina" class="about-image" loading="lazy" width="400" height="380">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delicious Mexican Food Section -->
+    <section class="gallery-section" id="gallery-section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-subtitle-container centered">
+                    <span class="line-small"></span>
+                    <span class="section-subtitle" id="gallery-subtitle" data-es="Amor al Primer Bocado" data-en="Love At First Bite">Love At First Bite</span>
+                    <span class="line-small"></span>
+                </span>
+                <h2 class="section-title" id="gallery-title" data-es="Deliciosa Comida Mexicana" data-en="Delicious Mexican Food">Delicious Mexican Food</h2>
+            </div>
+            <div id="gallery-container">
+                <!-- Dynamic Gallery Items -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Section -->
+    <section class="catering-section" id="catering-section">
+        <div class="catering-overlay"></div>
+        <div class="container">
+            <div class="catering-box">
+                <div class="section-header centered">
+                    <span class="section-subtitle-container centered">
+                        <span class="line-small"></span>
+                        <span class="section-subtitle" id="catering-subtitle" data-es="Hora de Celebrar" data-en="Party Time">Party Time</span>
+                        <span class="line-small"></span>
+                    </span>
+                    <h2 class="section-title" id="catering-title" data-es="Servicio de Catering" data-en="La Golondrina Catering">La Golondrina Catering</h2>
+                </div>
+                <p id="catering-p1" class="catering-text" data-es="¡Lleva sabores auténticos a tus eventos especiales! Servimos deliciosos tacos, burritos, quesadillas, taquitos dorados, enchiladas, chiles rellenos, nachos y mucho más para deleitar a todos tus invitados." data-en="Bring authentic flavors to your special events! Serving tacos, burritos, quesadillas, crispy taquitos, enchiladas, chile relleno, nachos, and more.">Bring authentic flavors to your special events! Serving tacos, burritos, quesadillas, crispy taquitos, enchiladas, chile relleno, nachos, and more.</p>
+                <p id="catering-p2" class="catering-text" data-es="Contáctanos hoy mismo para obtener una cotización personalizada para tu fiesta o evento." data-en="Contact us today for a quote: 626-260-8270">Contact us today for a quote: 626-260-8270</p>
+                <div class="catering-phone-badge" id="catering-phone-badge">TEL: 626-260-8270</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section" id="info-section">
+        <div class="container">
+            <div class="info-box">
+                <div class="section-header centered">
+                    <span class="section-subtitle-container centered">
+                        <span class="line-small"></span>
+                        <span class="section-subtitle" id="info-subtitle" data-es="Visítanos" data-en="Visit Us">Visit Us</span>
+                        <span class="line-small"></span>
+                    </span>
+                    <h2 class="section-title" id="info-title" data-es="Información" data-en="Information">Information</h2>
+                </div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h4 data-es="Horario de Atención" data-en="Opening Hours">Opening Hours</h4>
+                        <p id="info-hours">Monday - Sunday: 11AM - 11PM</p>
+                    </div>
+                    <div class="info-item">
+                        <h4 data-es="Teléfono" data-en="Phone">Phone</h4>
+                        <p id="info-phone">626-260-8270</p>
+                    </div>
+                    <div class="info-item">
+                        <h4 data-es="Dirección" data-en="Address">Address</h4>
+                        <p id="info-address">4820 Huntington Dr, Los Angeles, CA 90032</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-title" data-es="Contáctanos" data-en="Contact Us">Contact Us</h4>
+                    <p id="footer-address">4820 Huntington Dr, Los Angeles, CA 90032</p>
+                    <p id="footer-phone">Phone: 626-260-8270</p>
+                    <div id="social-icons" style="margin-top: 25px; display: flex; gap: 18px; align-items: center;">
+                        <!-- Social Networks dynamically added here -->
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title" data-es="Horarios" data-en="Opening Hours">Opening Hours</h4>
+                    <p id="footer-hours">Monday - Sunday: 11AM - 11PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span id="menutech-copyright"></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Menutech Powered Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const startYear = 2015;
+            const currentYear = new Date().getFullYear();
+            const yearText = startYear === currentYear ? `${startYear}` : `${startYear} - ${currentYear}`;
+            const copyrightContainer = document.getElementById("menutech-copyright");
+            if (copyrightContainer) {
+                copyrightContainer.innerHTML = `© ${yearText} Powered by <a href="https://menutech.xyz/" target="_blank" rel="noopener noreferrer">Menutech</a>`;
+            }
+        });
+    </script>
+
+    <script>
+        /* Menutech bilingual and dynamic content logic */
+        const optimizeCloudinaryUrl = (url, options = {}) => {
+            if (!url || typeof url !== 'string' || !url.includes('res.cloudinary.com')) return url;
+            const [baseUrl, hash] = url.split('#');
+            if (!baseUrl.includes('/upload/')) return url;
+            const parts = baseUrl.split('/upload/');
+
+            let pathSegments = parts[1].split('/');
+            if (pathSegments.length > 1) {
+                const firstSegment = pathSegments[0];
+                const isVersion = /^v\d+$/.test(firstSegment);
+                const isTransformation = !isVersion && (firstSegment.includes('_') || firstSegment.includes(','));
+                if (isTransformation) {
+                    pathSegments.shift();
+                }
+            }
+            const cleanPath = pathSegments.join('/');
+
+            let transformations = ['f_auto', 'q_auto:eco', 'dpr_auto'];
+            if (options.width) {
+                transformations.push(`w_${options.width}`);
+            } else {
+                transformations.push('w_400');
+            }
+            if (options.height) transformations.push(`h_${options.height}`);
+            if (options.crop) transformations.push(`c_${options.crop}`);
+            const transformationString = transformations.join(',');
+            const optimizedUrl = `${parts[0]}/upload/${transformationString}/${cleanPath}`;
+            return hash ? `${optimizedUrl}#${hash}` : optimizedUrl;
+        };
+
+        const SOCIAL_ICONS = {
+            instagram: `<svg style="width:26px;height:26px;fill:currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>`,
+            facebook: `<svg style="width:26px;height:26px;fill:currentColor" viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>`,
+            whatsapp: `<svg style="width:26px;height:26px;fill:currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.81 9.81 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.22 8.22 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23-1.44 0-2.85-.38-4.1-1.11l-.29-.17-3.06.81.82-2.98-.19-.3a8.22 8.22 0 0 1-1.26-4.48c0-4.54 3.7-8.23 8.24-8.23m-3.85 3.09c-.21 0-.45.03-.66.24-.21.21-.81.79-.81 1.94s.84 2.25.96 2.41c.12.16 1.63 2.49 3.96 3.5.55.24 1 .38 1.34.49.56.18 1.07.15 1.48.09.45-.06 1.39-.57 1.58-1.12.2-.55.2-1.02.14-1.12-.06-.1-.21-.16-.45-.27-.24-.12-1.39-.69-1.61-.77-.22-.08-.37-.12-.53.12-.16.24-.61.77-.75.93-.14.16-.27.18-.51.06-.24-.12-.99-.36-1.89-1.16-.7-.62-1.17-1.39-1.31-1.63-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.15.16-.25.24-.42.08-.17.04-.32-.02-.45-.06-.13-.53-1.28-.73-1.75-.19-.48-.39-.41-.53-.42l-.44-.01Z"/></svg>`,
+            tiktok: `<svg style="width:26px;height:26px;fill:currentColor" viewBox="0 0 24 24"><path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg>`
+        };
+
+        let currentLang = 'en';
+
+        function applyLanguage(lang) {
+            currentLang = lang;
+            document.querySelectorAll('[data-es]').forEach(el => {
+                const translation = el.getAttribute(`data-${lang}`);
+                if (translation) {
+                    if (el.children.length > 0 && translation.includes('<')) {
+                        el.innerHTML = translation;
+                    } else {
+                        el.textContent = translation;
+                    }
+                }
+            });
+
+            // Update language switch UI
+            const esBtn = document.getElementById('lang-es');
+            const enBtn = document.getElementById('lang-en');
+            if (!esBtn || !enBtn) return;
+
+            if (lang === 'es') {
+                esBtn.style.fontWeight = '700';
+                esBtn.style.color = 'var(--color-primary)';
+                enBtn.style.fontWeight = '400';
+                enBtn.style.color = '#999';
+                document.documentElement.lang = 'es';
+            } else {
+                enBtn.style.fontWeight = '700';
+                enBtn.style.color = 'var(--color-primary)';
+                esBtn.style.fontWeight = '400';
+                esBtn.style.color = '#999';
+                document.documentElement.lang = 'en';
+            }
+        }
+
+        function updateUI(data) {
+            if (!data) return;
+
+            if (data.lang) {
+                applyLanguage(data.lang);
+            }
+
+            if (data.title) {
+                const navBrand = document.getElementById('nav-brand');
+                if (navBrand) navBrand.textContent = data.title;
+                document.title = `${data.title} – Authentic Mexican Food & Catering`;
+            }
+
+            if (data.logoImg) {
+                const logo = document.getElementById('hero-logo');
+                const favicon = document.getElementById('favicon');
+                const optimizedLogo = optimizeCloudinaryUrl(data.logoImg, { width: 280 });
+                if (logo) logo.src = optimizedLogo;
+                if (favicon) favicon.href = optimizedLogo;
+            }
+
+            if (data.heroAddress !== undefined) {
+                const addr = document.getElementById('hero-address');
+                const topAddr = document.getElementById('top-bar-address');
+                if (addr) addr.textContent = data.heroAddress;
+                if (topAddr) topAddr.textContent = data.heroAddress;
+            }
+
+            const sections = {
+                'about-section': data.showAbout !== false,
+                'gallery-section': data.showGallery !== false,
+                'catering-section': data.showCatering !== false,
+                'info-section': data.showInfo !== false
+            };
+            Object.keys(sections).forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.display = sections[id] ? '' : 'none';
+            });
+
+            const cuid = data.cuid || '';
+            const ruid = data.ruid || '';
+
+            const ordersBtn = document.querySelector('menutech-orders');
+            if (ordersBtn) {
+                const newOrdersBtn = document.createElement('menutech-orders');
+                newOrdersBtn.setAttribute('cuid', cuid);
+                newOrdersBtn.setAttribute('ruid', ruid);
+                newOrdersBtn.setAttribute('background', '#FF8C00');
+                newOrdersBtn.setAttribute('color', '#111111');
+                newOrdersBtn.setAttribute('data-glf-cuid', cuid);
+                newOrdersBtn.setAttribute('data-glf-ruid', ruid);
+                ordersBtn.parentNode.replaceChild(newOrdersBtn, ordersBtn);
+            }
+
+            const resWrapper = document.getElementById('hero-reservations-wrapper');
+            if (resWrapper) {
+                resWrapper.style.setProperty('display', (data.showReservations !== false) ? 'inline-block' : 'none', 'important');
+                const resBtn = resWrapper.querySelector('menutech-reservations');
+                if (resBtn) {
+                    const newResBtn = document.createElement('menutech-reservations');
+                    newResBtn.setAttribute('cuid', cuid);
+                    newResBtn.setAttribute('ruid', ruid);
+                    newResBtn.setAttribute('background', '#FFD700');
+                    newResBtn.setAttribute('color', '#111111');
+                    newResBtn.setAttribute('data-glf-cuid', cuid);
+                    newResBtn.setAttribute('data-glf-ruid', ruid);
+                    newResBtn.setAttribute('data-glf-reservation', 'true');
+                    resBtn.parentNode.replaceChild(newResBtn, resBtn);
+                }
+            }
+
+            if (window.glfBindButtons) window.glfBindButtons();
+
+            if (data.heroImg) {
+                const heroSection = document.getElementById('hero-section');
+                if (heroSection) heroSection.style.backgroundImage = `url('${optimizeCloudinaryUrl(data.heroImg, { width: 1200 })}')`;
+            }
+
+            if (data.aboutImg1) {
+                const img = document.getElementById('about-img-1');
+                if (img) img.src = optimizeCloudinaryUrl(data.aboutImg1, { width: 600 });
+            }
+            if (data.aboutImg2) {
+                const img = document.getElementById('about-img-2');
+                if (img) img.src = optimizeCloudinaryUrl(data.aboutImg2, { width: 600 });
+            }
+            if (data.cateringBg) {
+                const el = document.getElementById('catering-section');
+                if (el) el.style.backgroundImage = `url('${optimizeCloudinaryUrl(data.cateringBg, { width: 1200 })}')`;
+            }
+
+            if (data.info) {
+                const hoursEl = document.getElementById('info-hours');
+                const phoneEl = document.getElementById('info-phone');
+                const addressEl = document.getElementById('info-address');
+                const topPhoneEl = document.getElementById('top-bar-phone');
+
+                if (hoursEl) hoursEl.innerHTML = (data.info.hours || '').replace(/\n/g, '<br>');
+                if (phoneEl) phoneEl.textContent = data.info.phone || '';
+                if (addressEl) addressEl.textContent = data.info.address || '';
+                if (topPhoneEl && data.info.phone) topPhoneEl.textContent = data.info.phone;
+
+                const fHours = document.getElementById('footer-hours');
+                const fPhone = document.getElementById('footer-phone');
+                const fAddress = document.getElementById('footer-address');
+                if (fHours) fHours.innerHTML = (data.info.hours || '').replace(/\n/g, '<br>');
+                if (fPhone) fPhone.textContent = (data.info.phone ? (currentLang === 'es' ? 'Teléfono: ' : 'Phone: ') + data.info.phone : '');
+                if (fAddress) fAddress.textContent = data.info.address || '';
+            }
+
+            if (data.socials) {
+                const container = document.getElementById('social-icons');
+                if (container) {
+                    container.innerHTML = data.socials.map(s => {
+                        const platformName = s.platform === 'twitter' ? 'tiktok' : s.platform;
+                        const targetUrl = s.platform === 'twitter' && !s.url.includes('tiktok') ? 'https://www.tiktok.com/@la.golondrina.cat' : s.url;
+                        return `
+                            <a href="${targetUrl}" target="_blank" rel="noopener noreferrer" aria-label="${platformName}" style="color: #CCCCCC; transition: color 0.3s;" onmouseover="this.style.color='#FF8C00'" onmouseout="this.style.color='#CCCCCC'">
+                                ${SOCIAL_ICONS[platformName] || ''}
+                            </a>
+                        `;
+                    }).join('');
+                }
+            }
+
+            if (data.gallery) {
+                const container = document.getElementById('gallery-container');
+                if (container) {
+                    container.innerHTML = data.gallery.map(img => `
+                        <div class="gallery-item">
+                            <img src="${optimizeCloudinaryUrl(img, { width: 600, height: 600, crop: 'fill' })}" alt="Platillo mexicano de La Golondrina Catering" class="gallery-img" loading="lazy" width="400" height="400">
+                        </div>
+                    `).join('');
+                }
+            }
+
+            if (data.titles) {
+                Object.keys(data.titles).forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el) el.textContent = data.titles[id];
+                });
+            }
+
+            if (data.paragraphs) {
+                const sectionMap = {
+                    about: ['about-p1', 'about-p2', 'about-p3'],
+                    catering: ['catering-p1', 'catering-p2']
+                };
+
+                Object.keys(data.paragraphs).forEach(sectionKey => {
+                    const content = data.paragraphs[sectionKey] || "";
+                    const segments = content.split('\n\n');
+                    const elementIds = sectionMap[sectionKey];
+
+                    if (elementIds) {
+                        elementIds.forEach((id, index) => {
+                            const el = document.getElementById(id);
+                            if (el) {
+                                const segment = segments[index] || "";
+                                el.textContent = segment;
+                                el.style.display = segment.trim() === "" ? "none" : "";
+                            }
+                        });
+                    }
+                });
+            }
+        }
+
+        window.addEventListener('message', (event) => {
+            if (event.data.type === 'UPDATE_CONTENT') {
+                updateUI(event.data.data);
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.MENU_TECH_STATE) {
+                updateUI(window.MENU_TECH_STATE);
+            }
+
+            const esBtn = document.getElementById('lang-es');
+            const enBtn = document.getElementById('lang-en');
+            if (esBtn) esBtn.addEventListener('click', () => applyLanguage('es'));
+            if (enBtn) enBtn.addEventListener('click', () => applyLanguage('en'));
+
+            document.body.addEventListener('click', (e) => {
+                let target = e.target;
+                while (target && target !== document.body) {
+                    if (target.id && (
+                        target.id === 'nav-brand' ||
+                        target.id === 'hero-logo' ||
+                        target.id === 'hero-section' ||
+                        target.id === 'hero-orders' ||
+                        target.id === 'hero-reservations' ||
+                        target.id === 'hero-address' ||
+                        target.id.startsWith('about-') ||
+                        target.id === 'gallery-container' ||
+                        target.id === 'catering-section' ||
+                        target.id.startsWith('catering-') ||
+                        target.id === 'info-section' ||
+                        target.id.startsWith('info-') ||
+                        target.id.startsWith('footer-') ||
+                        target.id === 'social-icons'
+                    )) {
+                        window.parent.postMessage({ type: 'SCROLL_TO', id: target.id }, '*');
+                        break;
+                    }
+                    target = target.parentElement;
+                }
+            });
+        });
+
+        const navbarToggler = document.getElementById('navbar-toggler');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (navbarToggler && navMenu) {
+            navbarToggler.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const icons = navbarToggler.querySelectorAll('.toggler-icon');
+                icons.forEach((icon, index) => {
+                    if (navMenu.classList.contains('active')) {
+                        if (index === 0) icon.style.transform = 'rotate(45deg) translate(6px, 6px)';
+                        else if (index === 1) icon.style.opacity = '0';
+                        else if (index === 2) icon.style.transform = 'rotate(-45deg) translate(6px, -6px)';
+                    } else {
+                        icon.style.transform = 'none';
+                        icon.style.opacity = '1';
+                    }
+                });
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!navbarToggler.contains(e.target) && !navMenu.contains(e.target)) {
+                    navMenu.classList.remove('active');
+                    const icons = navbarToggler.querySelectorAll('.toggler-icon');
+                    icons.forEach(icon => {
+                        icon.style.transform = 'none';
+                        icon.style.opacity = '1';
+                    });
+                }
+            });
+        }
+
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                navbar.style.padding = '12px 0';
+                navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.7)';
+            } else {
+                navbar.style.padding = '18px 0';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.12
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'all 0.6s ease-out';
+            observer.observe(section);
+        });
+
+        const heroEl = document.querySelector('.hero');
+        if (heroEl) {
+            heroEl.style.opacity = '1';
+            heroEl.style.transform = 'translateY(0)';
+        }
+    </script>
+</body>
+</html>
