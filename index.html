@@ -14,7 +14,7 @@
     <link rel="icon" id="favicon" type="image/png" href="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1785775711/LaGolondrinaLOGO_ubx0rw.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -280,8 +280,34 @@
             gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             align-items: center;
+        }
+
+        /* Botón de Llamada Destacado (Call Now) */
+        .btn-call-now {
+            display: inline-block;
+            padding: 16px 36px;
+            font-family: var(--font-body);
+            font-size: 15px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background-color: var(--color-accent);
+            color: var(--color-black);
+            border: 2px solid var(--color-accent);
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.45);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-call-now:hover {
+            background-color: var(--color-white);
+            border-color: var(--color-white);
+            color: var(--color-black);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(255, 255, 255, 0.5);
         }
 
         .btn-custom-order {
@@ -309,11 +335,26 @@
             box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
         }
 
+        /* Aviso de Fee para Tarjetas de Débito y Crédito */
+        .card-fee-notice {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 8px 18px;
+            background-color: rgba(0, 0, 0, 0.75);
+            border: 1px dashed var(--color-accent);
+            color: var(--color-accent);
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            border-radius: 4px;
+        }
+
         .hero-address {
             font-size: 16px;
             font-weight: 500;
-            color: var(--color-accent);
-            margin-top: 15px;
+            color: var(--color-white);
+            margin-top: 10px;
             letter-spacing: 1px;
         }
 
@@ -499,14 +540,21 @@
         .catering-phone-badge {
             display: inline-block;
             margin-top: 20px;
-            padding: 12px 28px;
-            background-color: var(--color-black);
-            border: 1px solid var(--color-accent);
-            color: var(--color-accent);
-            font-weight: 700;
+            padding: 14px 32px;
+            background-color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+            color: var(--color-black);
+            font-weight: 800;
             font-size: 18px;
             border-radius: 4px;
             letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .catering-phone-badge:hover {
+            background-color: var(--color-primary);
+            border-color: var(--color-primary);
+            transform: translateY(-2px);
         }
 
         /* Info Section */
@@ -695,6 +743,7 @@
                 align-items: stretch;
             }
 
+            .btn-call-now,
             .btn-custom-order {
                 width: 100%;
                 text-align: center;
@@ -866,13 +915,16 @@
             <span class="hero-tag" data-es="Auténtica Cocina Mexicana" data-en="Authentic Mexican Cuisine">Authentic Mexican Cuisine</span>
             <h1 class="hero-title" id="hero-main-title" data-es="Sabor Tradicional <span>& Eventos</span>" data-en="Traditional Flavor <span>& Catering</span>">Traditional Flavor <span>& Catering</span></h1>
             <div class="hero-buttons">
+                <!-- Botón principal de Llamada priorizado (Call Now!) -->
+                <a href="tel:6262608270" class="btn-call-now" data-es="¡Llama ahora! (626)-260-8270" data-en="Call Now! (626)-260-8270">Call Now! (626)-260-8270</a>
+
                 <!-- 1. Script Motor Menutech -->
                 <script src="https://www.fbgcdn.com/embedder/js/ewm2.js"></script>
 
                 <!-- 2. Librería Menutech -->
                 <script src="https://menutech.xyz/menutechUI.min.js"></script>
 
-                <!-- Botón personalizado único para pedidos en línea -->
+                <!-- Botón de pedidos en línea -->
                 <a href="https://lagolondrinacatering.onlineordering.io/en?locationId=1502662&orderMode=in_store_pickup" target="_blank" rel="noopener noreferrer" class="btn-custom-order" id="hero-orders-btn" data-es="Pedir en Línea Ahora" data-en="Order Online Now">Order Online Now</a>
 
                 <div id="hero-reservations-wrapper" style="display: none;">
@@ -885,6 +937,10 @@
                 setTimeout(() => { if(window.glfBindButtons) window.glfBindButtons(); }, 1000);
                 </script>
             </div>
+            
+            <!-- Aviso Debit and Credit card Fee -->
+            <div class="card-fee-notice" data-es="* Aplica cargo por pago con tarjeta de débito y crédito" data-en="* Debit and Credit card Fee applies">* Debit and Credit card Fee applies</div>
+
             <p class="hero-address" id="hero-address">4820 Huntington Dr, Los Angeles, CA 90032</p>
         </div>
     </header>
@@ -945,7 +1001,8 @@
                 </div>
                 <p id="catering-p1" class="catering-text" data-es="¡Lleva sabores auténticos a tus eventos especiales! Servimos deliciosos tacos, burritos, quesadillas, taquitos dorados, enchiladas, chiles rellenos, nachos y mucho más para deleitar a todos tus invitados." data-en="Bring authentic flavors to your special events! Serving tacos, burritos, quesadillas, crispy taquitos, enchiladas, chile relleno, nachos, and more.">Bring authentic flavors to your special events! Serving tacos, burritos, quesadillas, crispy taquitos, enchiladas, chile relleno, nachos, and more.</p>
                 <p id="catering-p2" class="catering-text" data-es="Contáctanos hoy mismo para obtener una cotización personalizada para tu fiesta o evento." data-en="Contact us today for a quote: 626-260-8270">Contact us today for a quote: 626-260-8270</p>
-                <div class="catering-phone-badge" id="catering-phone-badge">TEL: 626-260-8270</div>
+                <a href="tel:6262608270" class="catering-phone-badge" id="catering-phone-badge" data-es="¡LLAMA AHORA! (626)-260-8270" data-en="CALL NOW! (626)-260-8270">CALL NOW! (626)-260-8270</a>
+                <div class="card-fee-notice" style="display: block; width: fit-content; margin: 18px auto 0;" data-es="* Aplica cargo por pago con tarjeta de débito y crédito" data-en="* Debit and Credit card Fee applies">* Debit and Credit card Fee applies</div>
             </div>
         </div>
     </section>
@@ -970,6 +1027,7 @@
                     <div class="info-item">
                         <h4 data-es="Teléfono" data-en="Phone">Phone</h4>
                         <p id="info-phone">626-260-8270</p>
+                        <p style="font-size: 12px; color: var(--color-accent); margin-top: 8px; font-weight: 700;" data-es="* Aplica cargo por pago con tarjeta de débito y crédito" data-en="* Debit and Credit card Fee applies">* Debit and Credit card Fee applies</p>
                     </div>
                     <div class="info-item">
                         <h4 data-es="Dirección" data-en="Address">Address</h4>
@@ -988,6 +1046,7 @@
                     <h4 class="footer-title" data-es="Contáctanos" data-en="Contact Us">Contact Us</h4>
                     <p id="footer-address">4820 Huntington Dr, Los Angeles, CA 90032</p>
                     <p id="footer-phone">Phone: 626-260-8270</p>
+                    <p style="font-size: 13px; color: var(--color-accent); margin-top: 6px; font-weight: 700;" data-es="* Aplica cargo por pago con tarjeta de débito y crédito" data-en="* Debit and Credit card Fee applies">* Debit and Credit card Fee applies</p>
                     <div id="social-icons" style="margin-top: 25px; display: flex; gap: 18px; align-items: center;">
                         <!-- Social Networks dynamically added here -->
                     </div>
